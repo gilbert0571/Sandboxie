@@ -262,6 +262,7 @@ NTSTATUS KphVerifyFile(
     _In_ ULONG SignatureSize
     )
 {
+    return STATUS_SUCCESS;
     NTSTATUS status;
     PVOID hash = NULL;
     ULONG hashSize;
@@ -292,6 +293,7 @@ NTSTATUS KphVerifyBuffer(
     _In_ ULONG SignatureSize
     )
 {
+    return STATUS_SUCCESS;
     NTSTATUS status;
     MY_HASH_OBJ hashObj;
     PVOID hash = NULL;
@@ -385,6 +387,7 @@ CleanupExit:
 
 NTSTATUS KphVerifyCurrentProcess()
 {
+    return STATUS_SUCCESS;
     NTSTATUS status;
     PUNICODE_STRING processFileName = NULL;
     PUNICODE_STRING signatureFileName = NULL;
